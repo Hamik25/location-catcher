@@ -5,14 +5,20 @@ import { NgModule } from '@angular/core';
 import { AppComponent } from './app.component';
 import { HeaderComponent } from './header/header.component';
 import { SectionComponent } from './section/section.component';
-import { AppRoutingModule } from './/app-routing.module';
+import { AppRoutingModule } from './app-routing.module';
+import { LinksComponent } from './links/links.component';
+import { LocationsComponent } from './locations/locations.component';
+import { DataTableComponent } from './data-table/data-table.component';
 
 
 @NgModule({
   declarations: [
     AppComponent,
     HeaderComponent,
-    SectionComponent
+    SectionComponent,
+    LinksComponent,
+    LocationsComponent,
+    DataTableComponent
   ],
   imports: [
     BrowserModule,
