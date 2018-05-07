@@ -1,6 +1,10 @@
 import { BrowserModule } from '@angular/platform-browser';
 import { NgModule } from '@angular/core';
 
+import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
+
+import { MatMenuModule } from '@angular/material/menu';
+import { MatButtonModule, MatCheckboxModule } from '@angular/material';
 
 import { AppComponent } from './app.component';
 import { HeaderComponent } from './header/header.component';
@@ -8,7 +12,6 @@ import { SectionComponent } from './section/section.component';
 import { AppRoutingModule } from './app-routing.module';
 import { LinksComponent } from './links/links.component';
 import { LocationsComponent } from './locations/locations.component';
-import { DataTableComponent } from './data-table/data-table.component';
 
 
 @NgModule({
@@ -17,12 +20,15 @@ import { DataTableComponent } from './data-table/data-table.component';
     HeaderComponent,
     SectionComponent,
     LinksComponent,
-    LocationsComponent,
-    DataTableComponent
+    LocationsComponent    
   ],
   imports: [
     BrowserModule,
-    AppRoutingModule
+    AppRoutingModule,
+    BrowserAnimationsModule,
+    MatMenuModule,
+    MatButtonModule, 
+    MatCheckboxModule
   ],
   providers: [],
   bootstrap: [AppComponent]
