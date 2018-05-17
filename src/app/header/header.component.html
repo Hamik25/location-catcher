@@ -1,4 +1,4 @@
-<header>
+<!-- <header>
   <div class="logo-block">
     <img src="" alt="">
   </div>
@@ -6,4 +6,16 @@
   <div class="user-profile">
     
   </div>
-</header>
+</header> -->
+
+<mat-toolbar color="primary">
+  <mat-toolbar-row>
+    
+    <span class="example-spacer"></span>
+
+    <button mat-button *ngFor="let Link of Links" (click)="changeRoute(Link.url);">{{Link.displayName}}</button>
+
+  </mat-toolbar-row>
+</mat-toolbar>
+
+
